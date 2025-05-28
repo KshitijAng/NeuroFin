@@ -23,6 +23,16 @@ The model is trained on a curated fish image dataset taken from Kaggle and built
 
 ---
 
+## Note on Transfer Learning and MobileNetV3
+
+**Transfer Learning** is a technique in deep learning where a model trained on a large, general dataset is reused as the starting point for a related but different task. Instead of training a neural network from scratch — which requires massive data and computational power — transfer learning leverages the learned features of a pre-trained model. This approach significantly speeds up training and often improves performance, especially when your dataset is limited.
+
+**MobileNetV3** is a state-of-the-art Convolutional Neural Network (CNN) architecture optimized for mobile and edge devices. It balances accuracy and efficiency by combining techniques like depthwise separable convolutions, squeeze-and-excitation modules, and lightweight attention mechanisms. MobileNetV3 models come in two main variants—Large and Small—designed for different trade-offs between latency and accuracy.
+
+In this project, we use MobileNetV3-Large pre-trained on the ImageNet dataset (which contains1000 classes) as a base. By removing its classification head and adding custom dense layers, we fine-tune the model to classify fish species accurately while keeping training time and resource use manageable.
+
+---
+
 ## 🧠 Model Architecture
 
 * **Base Model:** MobileNetV3-Large (pretrained on ImageNet)
