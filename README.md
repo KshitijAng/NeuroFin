@@ -1,5 +1,8 @@
 # NeuroFin: Intelligent Fish Classification using Transfer Learning
 
+![Alt Text](Logo.png)
+
+
 ## 📌 Project Overview
 
 **NeuroFin** is an image classification project that accurately identifies and classifies fish species across **9 distinct categories** using deep learning. Leveraging the power of **Transfer Learning** with **MobileNetV3-Large**, this project achieves an impressive **90% validation accuracy**.
